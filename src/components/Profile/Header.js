@@ -1,17 +1,19 @@
 import React from 'react';
 import bg from '../../assets/images/bg.jpg';
+import styled from 'styled-components';
+import { color } from '../../shared/styles';
 
 const Header = props => {
-  const style = {
-    background: `url(${bg})`,
-    backgroundSize: "cover",
-    height: "85vh",
-    backgroundImage: `linear-gradient(to right bottom, rgba(0,255,255,.7)`
-  };
+  
+
+  const Header = styled.header`
+    background-image: linear-gradient(to right bottom, ${color.primaryLight}, ${color.primaryDark}), url(${bg});
+    background-size: cover;
+    height: 85vh;
+    position: relative;
+  `;
   return (
-    <header className="header" style={{...style}}>
-      Hi
-    </header>
+    <Header>hi</Header>
   );
 };
 
