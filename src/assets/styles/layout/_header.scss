@@ -1,0 +1,11 @@
+.header {
+  position: relative;
+  height: 85vh;
+  background-image: linear-gradient(to right bottom,
+          rgba($color-primary-light, 0.8),
+          rgba($color-primary-dark, 0.8));
+
+  background-size: cover;
+  background-position: top;
+  font-size: $default-font-size;
+}
