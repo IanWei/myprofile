@@ -1,4 +1,5 @@
 import React from 'react';
+import Composition from '../../components/UI/Composition';
 
 const SectionAbout = props => {
   return (
@@ -37,15 +38,7 @@ const SectionAbout = props => {
           </p>
         </div>
         <div className="col-1-of-2">
-          <div className="composition">
-            <img src="assets/img/pic1.JPG"
-                 alt="pic1"
-                 className="composition__photo composition__photo--p1"
-                 srcSet="assets/img/pic1.jpg 300w, assets/img/pic1-large.jpg 960w"
-            >
-              <img src="assets/img/pic2.JPG" alt="pic2" className="composition__photo composition__photo--p2">
-                <img src="assets/img/pic3.JPG" alt="pic3" className="composition__photo composition__photo--p3">
-          </div>
+          <Composition/>
         </div>
 
       </div>
