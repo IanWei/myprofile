@@ -2,9 +2,14 @@ import React, { Component } from 'react';
 import Header from '../components/Profile/Header';
 
 class ProfileBuilder extends Component {
+
+  btnClickHandler = () => {
+    console.log('Hello');
+  };
+
   render() {
     return (
-      <Header/>
+      <Header btnClick={this.btnClickHandler}/>
     );
   }
 }

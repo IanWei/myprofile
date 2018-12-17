@@ -1,11 +1,26 @@
 .header {
   position: relative;
   height: 85vh;
-  background-image: linear-gradient(to right bottom,
-          rgba($color-primary-light, 0.8),
-          rgba($color-primary-dark, 0.8));
+  @supports (clip-path: polygon(0 0)) {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
 
-  background-size: cover;
-  background-position: top;
-  font-size: $default-font-size;
+  &__photo {
+    height: 15rem;
+    width: 15rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  &__img {
+    height: 100%;
+    transform: scale(1.4) translateY(1rem);
+  }
+
+  &__text-box {
+    @include absCenter;
+    text-align: center;
+  }
 }
