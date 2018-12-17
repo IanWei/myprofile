@@ -1,5 +1,5 @@
 import React from 'react';
-import Composition from '../../components/UI/Composition';
+import Composition from '../Other/Composition';
 
 const SectionAbout = props => {
   return (
@@ -40,7 +40,6 @@ const SectionAbout = props => {
         <div className="col-1-of-2">
           <Composition/>
         </div>
-
       </div>
     </section>
   );
