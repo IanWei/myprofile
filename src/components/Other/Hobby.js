@@ -15,7 +15,7 @@ const Hobby = ({title, description, caption, index}) => {
     shapeArr = ['hobby__shape'],
     textArr = ['hobby__text'];
 
-  if (index %2 !== 0) {
+  if (index %2 === 0) {
     hobbyArr.push('hobby--1');
     shapeArr.push('hobby__shape--1');
   } else {

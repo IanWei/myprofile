@@ -5,8 +5,9 @@
   width: 70%;
   height: 50%;
   border: 1px solid #ccc;
-  box-shadow: 1px 1px 1px black;
-  padding: 16px;
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.8);
+  padding: 1.6rem;
   left: 15%;
   top: 10%;
+  transition: all .8s cubic-bezier(.45,-0.19,.45,1.37);
 }
