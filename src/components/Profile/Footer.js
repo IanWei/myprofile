@@ -17,7 +17,7 @@ const Footer = props => (
           <Logo invisible/>
           <FontAwesomeIcon icon="envelope-square" className="footer__icon" />
           <span className="footer__email">ikaeuu@gmail.com</span>
-          <AwesomeButton type="secondary">
+          <AwesomeButton type="secondary" action={props.btnClick}>
             Contact me
           </AwesomeButton>
         </div>
