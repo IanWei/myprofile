@@ -1,0 +1,24 @@
+.footer {
+  padding: 2rem 0;
+  background-image: linear-gradient(rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
+  font-size: 1.4rem;
+  color: $color-grey-light-1;
+  position: relative;
+  &__copyright {
+    vertical-align: middle;
+  }
+
+  &__contact-me {
+    float: right;
+  }
+
+  &__icon {
+    font-size: 3rem;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  &__email {
+    display: inline-block;
+    margin: 0 2rem;
+  }
+}

@@ -22,7 +22,7 @@ const Header = props => {
   return (
     <header className="header">
       <BgImage/>
-      <Logo/>
+      <Logo top/>
       <div className="header__text-box">
         <div className="header__photo">
           <img src={me} alt="Wei-Hao Wei" className="header__img"/>

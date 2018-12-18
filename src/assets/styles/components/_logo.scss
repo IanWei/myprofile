@@ -1,8 +1,21 @@
 .logo {
-  position: absolute;
-  top: 6rem;
-  left: 6rem;
-  &__image {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 2rem;
+  &--top {
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+  }
+
+  &--top &__image {
     height: 5.5rem;
+  }
+
+  &--invisible {
+    visibility: hidden;
+  }
+  &__image {
+    height: 4rem;
   }
 }

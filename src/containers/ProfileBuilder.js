@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../components/Profile/Header';
 import SectionAbout from '../components/Profile/SectionAbout';
 import SectionInteresting from '../components/Profile/SectionInteresting';
+import Footer from '../components/Profile/Footer';
 import Aux from '../hoc/Aux';
 
 class ProfileBuilder extends Component {
@@ -16,6 +17,7 @@ class ProfileBuilder extends Component {
         <Header btnClick={this.btnClickHandler}/>
         <SectionAbout/>
         <SectionInteresting/>
+        <Footer/>
       </Aux>
     );
   }
