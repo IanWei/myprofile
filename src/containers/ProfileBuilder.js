@@ -5,6 +5,7 @@ import SectionInteresting from '../components/Profile/SectionInteresting';
 import Footer from '../components/Profile/Footer';
 import Aux from '../hoc/Aux';
 import Modal from '../components/UI/Modal';
+import ContactForm from '../components/Other/ContactForm';
 
 class ProfileBuilder extends Component {
   state = {
@@ -21,12 +22,14 @@ class ProfileBuilder extends Component {
 
   modalClosedHandler = () => {
     this.setState({showModal: false});
-  }
+  };
 
   render() {
     return (
       <Aux>
-        <Modal show={this.state.showModal} modalClose={this.modalClosedHandler}/>
+        <Modal show={this.state.showModal} modalClose={this.modalClosedHandler}>
+          <ContactForm/>
+        </Modal>
         <Header btnClick={this.btnClickHandler}/>
         <SectionAbout/>
         <SectionInteresting/>
