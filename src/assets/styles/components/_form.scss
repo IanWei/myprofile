@@ -1,5 +1,6 @@
 .form {
   &__group {
+    color: $color-white;
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
@@ -13,7 +14,7 @@
     background-color: rgba($color-white, .5);
     border: none;
     border-bottom: 3px solid transparent;
-    width: 90%;
+    width: 100%;
     display: block;
     transition: all .3s;
 

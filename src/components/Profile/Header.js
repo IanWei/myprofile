@@ -31,7 +31,9 @@ const Header = props => {
           <span className="heading-primary--main">Wei-Hao Wei</span>
           <span className="heading-primary--sub">Front End Developer</span>
         </h1>
-        <Button clicked={props.btnClick} btnType="btn btn--white btn--animated"/>
+        <Button clicked={props.btnClick} white animated>
+          About Me
+        </Button>
       </div>
 
     </header>
