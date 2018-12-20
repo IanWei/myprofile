@@ -1,16 +1,13 @@
 import React from 'react';
 import logo from '../../assets/images/logo.png';
 
-const Logo = props => {
+const Logo = ({top, invisible, clicked, topRef}) => {
   let logoClass = ["logo"];
-  if (props.top) {
-    logoClass.push("logo--top");
-  } else if (props.invisible) {
-    logoClass.push("logo--invisible");
-  }
+  if (top) logoClass.push("logo--top");
+  if (invisible) logoClass.push("logo--invisible");
 
   return (
-    <div className={logoClass.join(' ')}>
+    <div className={logoClass.join(' ')} onClick={() => clicked(topRef)}>
       <img src={logo} className="logo__image" alt="logo"/>
     </div>
   );

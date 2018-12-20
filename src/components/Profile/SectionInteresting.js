@@ -18,7 +18,7 @@ const SecitionHobby = props => {
   );
 
   return (
-    <section className="section section-interesting">
+    <section className="section section-interesting" id="section-interesting">
       <BackgroundVideo/>
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="heading-secondary">

@@ -3,10 +3,7 @@ import bg from '../../assets/images/bg.jpg';
 import me from '../../assets/images/me.JPG';
 import styled from 'styled-components';
 import { color } from '../../shared/styles';
-import Logo from '../../components/Logo/Logo';
-import Button from '../../components/UI/Button';
-// import { AwesomeButton } from 'react-awesome-button';
-// import 'react-awesome-button/dist/styles.css';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Header = props => {
   const BgImage = styled.header`
@@ -20,9 +17,8 @@ const Header = props => {
     z-index: -10;
   `;
   return (
-    <header className="header">
+    <header className="header u-margin-top-big">
       <BgImage/>
-      <Logo top/>
       <div className="header__text-box">
         <div className="header__photo">
           <img src={me} alt="Wei-Hao Wei" className="header__img"/>
@@ -31,9 +27,9 @@ const Header = props => {
           <span className="heading-primary--main">Wei-Hao Wei</span>
           <span className="heading-primary--sub">Front End Developer</span>
         </h1>
-        <Button clicked={props.btnClick} white animated>
+        <AnchorLink href="#section-about" className="btn btn--white btn--animated">
           About Me
-        </Button>
+        </AnchorLink>
       </div>
 
     </header>

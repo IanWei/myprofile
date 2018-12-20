@@ -9,7 +9,7 @@ const Footer = props => (
     <div className="row">
       <div className="col-1-of-2">
         <div className="footer__copyright">
-          <Logo/>Copyright &copy; 2018 Wei-Hao Wei
+          <Logo clicked={props.logoClick} topRef={props.topRef}/>Copyright &copy; 2018 Wei-Hao Wei
         </div>
       </div>
       <div className="col-1-of-2">

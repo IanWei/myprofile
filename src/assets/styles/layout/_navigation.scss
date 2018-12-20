@@ -1,0 +1,51 @@
+.navigation {
+  background-color: $color-grey-light-1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1.5rem 3rem;
+  &__logo {
+    position: absolute;
+
+  }
+  &__nav {
+    line-height: 1.6rem;
+    padding: 1.2rem 0;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    color: $color-white;
+    float: right;
+    font-size: $default-font-size;
+    &--waypoint {
+      border: 1px solid black;
+    }
+    &:not(:last-child) {
+      margin-left: 3rem;
+    }
+    a:link,
+    a:visited {
+      color: $color-primary-light;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-secondary-light 50%);
+      background-size: 220%;
+      transition: all .2s;
+    }
+    a:hover,
+    a:active {
+      background-position: 50%;
+      color: $color-primary;
+      transform: translateX(1rem);
+    }
+  }
+
+
+  @include clearfix;
+}

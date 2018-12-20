@@ -3,7 +3,7 @@ import Composition from '../Other/Composition';
 
 const SectionAbout = props => {
   return (
-    <section className="section section-about">
+    <section className="section section-about" id="section-about">
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="heading-secondary">
           Read more about me
