@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { color } from "../../shared/styles";
+import { color, media } from "../../shared/styles";
 import bg from "../../assets/images/contact-bg.jpg";
 import Input from '../../components/UI/Input';
 import RadioInput from '../../components/UI/RadioInput';
@@ -15,6 +15,9 @@ class ContactForm extends Component {
   render() {
     const BgImage = styled.header`
       background-image: linear-gradient(${105}deg, ${color.primaryLight} 0%, ${color.primaryDark} 65%, transparent 65%), url(${bg});
+      ${media.phone`
+        background-image: linear-gradient(${105}deg, ${color.primaryLight} 0%, ${color.primaryDark} 75%, transparent 75%), url(${bg});
+      `};
       background-size: 100%;
       height: 100%;
       width: 100%;
