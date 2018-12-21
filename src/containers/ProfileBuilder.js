@@ -6,18 +6,17 @@ import Aux from '../hoc/Aux';
 import Modal from '../components/UI/Modal';
 import ContactForm from '../components/Other/ContactForm';
 import Waypoint from 'react-waypoint';
+import { connect } from 'react-redux';
+import * as actions from '../store/actions';
 
 class ProfileBuilder extends Component {
-  state = {
-    showModal: false,
-  };
 
   modalShowHandler = () => {
-    this.setState({showModal: true});
+    this.props.toggleModalState();
   };
 
   modalClosedHandler = () => {
-    this.setState({showModal: false});
+    this.props.toggleModalState();
   };
 
   showEnterMessage = () => {
@@ -31,7 +30,7 @@ class ProfileBuilder extends Component {
   render() {
     return (
       <Aux>
-        <Modal show={this.state.showModal} modalClose={this.modalClosedHandler}>
+        <Modal show={this.props.showModal} modalClose={this.modalClosedHandler}>
           <ContactForm/>
         </Modal>
         <Header/>
@@ -43,4 +42,8 @@ class ProfileBuilder extends Component {
   }
 }
 
-export default ProfileBuilder;
+const mapStateToProps = ({profile}) => {
+  return {showModal: profile.showModal}
+};
+
+export default connect(mapStateToProps, actions)(ProfileBuilder);

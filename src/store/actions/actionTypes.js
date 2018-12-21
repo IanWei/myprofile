@@ -1,0 +1,1 @@
+export const TOGGLE_MODAL_STATE = 'TOGGLE_MODAL_STATE';

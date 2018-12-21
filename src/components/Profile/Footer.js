@@ -3,6 +3,8 @@ import Logo from '../../components/Logo/Logo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { AwesomeButton } from 'react-awesome-button';
 import 'react-awesome-button/src/styles/styles.scss'
+import { connect } from 'react-redux';
+import * as actions from '../../store/actions';
 
 const Footer = props => (
   <footer className="footer">
@@ -17,7 +19,7 @@ const Footer = props => (
           <Logo invisible/>
           <FontAwesomeIcon icon="envelope-square" className="footer__icon" />
           <span className="footer__email">ikaeuu@gmail.com</span>
-          <AwesomeButton type="secondary" action={props.btnClick}>
+          <AwesomeButton type="secondary" action={props.toggleModalState}>
             Contact me
           </AwesomeButton>
         </div>
@@ -26,4 +28,4 @@ const Footer = props => (
   </footer>
 );
 
-export default Footer;
+export default connect(null, actions)(Footer);

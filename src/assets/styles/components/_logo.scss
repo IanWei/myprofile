@@ -5,9 +5,7 @@
 
   cursor: pointer;
   &--top {
-    position: absolute;
-    top: 6rem;
-    left: 6rem;
+    height: 6rem;
   }
 
   &--top &__image {

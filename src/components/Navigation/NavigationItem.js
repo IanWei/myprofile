@@ -7,8 +7,7 @@ const NavigationItem = ({link, children}) => {
   return (
     <li className={className}>
       <AnchorLink
-        href={link}
-        className="hi">
+        href={link}>
         {children}
       </AnchorLink>
     </li>

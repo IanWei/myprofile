@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Aux from './Aux';
 import Footer from '../components/Profile/Footer';
 import ToolBar from "../components/Navigation/ToolBar";
+import { connect } from 'react-redux';
+import * as actions from '../store/actions';
 
 class Layout extends Component {
   constructor(props) {
@@ -29,4 +31,4 @@ class Layout extends Component {
   }
 }
 
-export default Layout;
+export default connect(null, actions)(Layout);

@@ -6,7 +6,7 @@ const ToolBar = ({logoClick, topRef}) => {
   return (
     <div className="navigation u-margin-bottom-small">
       <div className="navigation__logo">
-        <Logo clicked={logoClick} topRef={topRef}/>
+        <Logo clicked={logoClick} topRef={topRef} top/>
       </div>
       <nav className="navigation__nav">
         <NavigationList/>
