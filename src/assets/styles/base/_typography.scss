@@ -11,11 +11,17 @@ body {
   backface-visibility: hidden;
   margin-bottom: 6rem;
 
+
   &--main {
     display: block;
-    font-size: 4rem;
+    font-size: 3.5rem;
     letter-spacing: 2rem;
     animation: moveInLeft 1s ease;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 3rem;
+    }
   }
 
   &--sub {
@@ -24,11 +30,16 @@ body {
     font-weight: 700;
     letter-spacing: 1.3rem;
     animation: moveInRight 1s ease;
+
+    @include respond(phone) {
+      letter-spacing: .8rem;
+      font-size: 1.5rem;
+    }
   }
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
@@ -37,6 +48,15 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all .2s;
+
+  @include respond(tab-port) {
+    font-size: 2.5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+
   &--footer {
     color: $color-white;
   }

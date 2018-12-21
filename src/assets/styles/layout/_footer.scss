@@ -1,15 +1,22 @@
 .footer {
   padding: 2rem 0;
-  background-image: linear-gradient(rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
+  background-image: linear-gradient(rgba($color-primary-light, 1), rgba($color-primary-dark, 1));
   font-size: 1.4rem;
   color: $color-grey-light-1;
   position: relative;
   &__copyright {
     vertical-align: middle;
+    @include respond(tab-port) {
+      text-align: center;
+    }
   }
 
   &__contact-me {
     float: right;
+    @include respond(tab-port) {
+      text-align: center;
+      float: none;
+    }
   }
 
   &__icon {

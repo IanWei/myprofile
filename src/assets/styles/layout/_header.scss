@@ -5,6 +5,12 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
 
+  @include respond(phone) {
+    @supports (clip-path: polygon(0 0)) {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+  }
+
   &__photo {
     height: 15rem;
     width: 15rem;

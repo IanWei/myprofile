@@ -16,7 +16,7 @@ const Footer = props => (
       </div>
       <div className="col-1-of-2">
         <div className="footer__contact-me">
-          <Logo invisible/>
+          {/*<Logo invisible/>*/}
           <FontAwesomeIcon icon="envelope-square" className="footer__icon" />
           <span className="footer__email">ikaeuu@gmail.com</span>
           <AwesomeButton type="secondary" action={props.toggleModalState}>

@@ -11,10 +11,6 @@ import * as actions from '../store/actions';
 
 class ProfileBuilder extends Component {
 
-  modalShowHandler = () => {
-    this.props.toggleModalState();
-  };
-
   modalClosedHandler = () => {
     this.props.toggleModalState();
   };

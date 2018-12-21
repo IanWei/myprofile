@@ -1,13 +1,21 @@
 import React from 'react';
 import bg from '../../assets/images/bg.jpg';
+import bgMin from '../../assets/images/bg-min.jpg';
 import me from '../../assets/images/me.JPG';
 import styled from 'styled-components';
-import { color } from '../../shared/styles';
+import { color, media } from '../../shared/styles';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 
 const Header = props => {
   const BgImage = styled.header`
-    background-image: linear-gradient(to right bottom, ${color.primaryLight}, ${color.primaryDark}), url(${bg});
+    background-image: linear-gradient(to right bottom, ${color.primaryLight}, ${color.primaryDark}), url(${bgMin});
+    ${media.phoneView`
+      background-image: linear-gradient(to right bottom,
+            ${color.primaryLight},
+            ${color.primaryDark}),
+            url(${bg});}
+    `}
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -16,6 +24,7 @@ const Header = props => {
     left: 0;
     z-index: -10;
   `;
+
   return (
     <header className="header u-margin-top-big">
       <BgImage/>
@@ -31,7 +40,6 @@ const Header = props => {
           About Me
         </AnchorLink>
       </div>
-
     </header>
   );
 };

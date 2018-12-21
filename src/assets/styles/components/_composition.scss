@@ -9,20 +9,46 @@
     outline-offset: 1rem;
     transition: all .4s ease;
 
+    @include respond(tab-port) {
+      float: left;
+      position: relative;
+      width: 33.333333%;
+      box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+    }
+
     &--p1 {
       top: 5rem;
       left: 0;
+
+      @include respond(tab-port) {
+        top: 0;
+        left: 5rem;
+        transform: scale(.85);
+      }
     }
 
     &--p2 {
       top: 18rem;
       left: 18rem;
       z-index: 10;
+
+      @include respond(tab-port) {
+        top: 0;
+        left: 0;
+        transform: scale(.9);
+        z-index: 15;
+      }
     }
 
     &--p3 {
       top: 33rem;
       left: 9rem;
+
+      @include respond(tab-port) {
+        top: 0;
+        left: -5rem;
+        transform: scale(.8);
+      }
     }
 
     &:hover {

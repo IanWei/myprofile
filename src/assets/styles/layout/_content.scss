@@ -1,4 +1,7 @@
 .content {
   padding: 0 3rem;
+  @include respond(tab-port) {  // width: <= 600px
+    padding: 0;
+  }
 }
 
