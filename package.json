@@ -73,7 +73,7 @@
     "npm": "6.5.0"
   },
   "scripts": {
-    "dev": "react-scripts start",
+    "dev": "node scripts/start.js",
     "start": "serve -s build",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
