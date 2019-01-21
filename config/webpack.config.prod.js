@@ -32,7 +32,7 @@ const shouldUseRelativeAssetPaths = publicPath === './';
 // Source maps are resource heavy and can cause out of memory issue for large source files.
 const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
 // Some apps do not need the benefits of saving a web request, so not inlining the chunk
-// makes for a smoother build process.
+// makes for a smoother docs process.
 const shouldInlineRuntimeChunk = process.env.INLINE_RUNTIME_CHUNK !== 'false';
 // `publicUrl` is just like `publicPath`, but we will provide it to our app
 // as %PUBLIC_URL% in `index.html` and `process.env.PUBLIC_URL` in JavaScript.
@@ -111,12 +111,12 @@ module.exports = {
   // Don't attempt to continue if there are any errors.
   bail: true,
   // We generate sourcemaps in production. This is slow but gives good results.
-  // You can exclude the *.map files from the build during deployment.
+  // You can exclude the *.map files from the docs during deployment.
   devtool: shouldUseSourceMap ? 'source-map' : false,
   // In production, we only want to load the app code.
   entry: [paths.appIndexJs],
   output: {
-    // The build folder.
+    // The docs folder.
     path: paths.appBuild,
     // Generated JS file names (with nested folders).
     // There will be one main bundle, and one file per asynchronous chunk.
@@ -168,7 +168,7 @@ module.exports = {
             ascii_only: true,
           },
         },
-        // Use multi-process parallel running to improve the build speed
+        // Use multi-process parallel running to improve the docs speed
         // Default number of concurrent runs: os.cpus().length - 1
         parallel: true,
         // Enable file caching
@@ -403,7 +403,7 @@ module.exports = {
               'sass-loader'
             ),
           },
-          // "file" loader makes sure assets end up in the `build` folder.
+          // "file" loader makes sure assets end up in the `docs` folder.
           // When you `import` an asset, you get its filename.
           // This loader doesn't use a "test" so it will catch all modules
           // that fall through the other loaders.
@@ -480,7 +480,7 @@ module.exports = {
     // You can remove this if you don't use Moment.js:
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     // Generate a service worker script that will precache, and keep up to date,
-    // the HTML & assets that are part of the Webpack build.
+    // the HTML & assets that are part of the Webpack docs.
     new WorkboxWebpackPlugin.GenerateSW({
       clientsClaim: true,
       exclude: [/\.map$/, /asset-manifest\.json$/],
