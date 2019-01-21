@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../assets/images/logo.png';
 
+
 const Logo = ({top, invisible, clicked, topRef}) => {
   let logoClass = ["logo"];
   if (top) logoClass.push("logo--top");

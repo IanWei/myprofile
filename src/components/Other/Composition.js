@@ -6,6 +6,8 @@ import pic2Large from '../../assets/images/pic2-large.jpg';
 import pic3 from '../../assets/images/pic3.jpg';
 import pic3Large from '../../assets/images/pic3-large.JPG';
 
+
+/* Composition shows the combination of three different photo, and styles them in the component. */
 const Composition = props => (
   <div className="composition">
     <img src={pic1}
