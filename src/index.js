@@ -17,6 +17,7 @@ const app = (
     </BrowserRouter>
   </Provider>
 );
+console.log('public url: ', process.env.PUBLIC_URL);
 
 ReactDOM.render( app, document.getElementById( 'root' ) );
 
