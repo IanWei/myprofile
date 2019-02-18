@@ -10,9 +10,8 @@ It will be optimised in near future.
 ```
 This app demonstrates Ian's profile.
 
-[Ian's Profile](https://ian-wei-my-profile.herokuapp.com/)
-
 ```
+[Ian's Profile](https://ian-wei-my-profile.herokuapp.com/)
 
 ## Project setup
 ```
