@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Preface
+
+This app hasn't optimised with image compressed and hasn't been responsive with the mobile size (minimum width: 600px)
+
 ## Available Scripts
 
 In the project directory, you can run:
