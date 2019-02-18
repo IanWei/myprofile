@@ -7,7 +7,7 @@ It will be optimised in near future. [Ian's Profile](https://ian-wei-my-profile.
 
 To explore more about my React skills, please refer to [Burger Builder](https://github.com/IanWei/BurgerBuilder-react) and [CryptoDash](https://github.com/IanWei/cryptodash-react) project in my git repo.
 
-For intricate css style, please refer to [Natous](https://github.com/IanWei/Natous) project in my git repo.
+For intricate css style (scss), please refer to [Natous](https://github.com/IanWei/Natous) project in my git repo.
 
 ## Feature
 
