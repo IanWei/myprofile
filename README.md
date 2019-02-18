@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Preface
 
 This app hasn't optimised with compressed image and hasn't been responsive with the mobile size (minimum width: 600px).
-It will be optimised in near future.
+It will be optimised in near future. [Ian's Profile](https://ian-wei-my-profile.herokuapp.com/)
 
 ## Feature
 
@@ -11,7 +11,6 @@ It will be optimised in near future.
 This app demonstrates Ian's profile.
 
 ```
-[Ian's Profile](https://ian-wei-my-profile.herokuapp.com/)
 
 ## Project setup
 ```
