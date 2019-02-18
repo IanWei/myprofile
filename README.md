@@ -7,6 +7,8 @@ It will be optimised in near future. [Ian's Profile](https://ian-wei-my-profile.
 
 To explore more about my React skills, please refer to Burger Builder and CryptoDash project in my git repo.
 
+For intricate css style, please refer to Natous project in my git repo.
+
 ## Feature
 
 ```
