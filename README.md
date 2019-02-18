@@ -2,7 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Preface
 
-This app hasn't optimised with image compressed and hasn't been responsive with the mobile size (minimum width: 600px)
+This app hasn't optimised with compressed image and hasn't been responsive with the mobile size (minimum width: 600px).
+It will be optimised in near future.
 
 ## Available Scripts
 
